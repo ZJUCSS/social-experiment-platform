@@ -1,0 +1,59 @@
+iterative_convo_v1.txt
+
+Variables:
+!<INPUT 0>! -- persona ISS
+!<INPUT 1>! -- public memory
+!<INPUT 2>! -- persona name
+!<INPUT 3>! -- retrieved memory
+!<INPUT 4>! -- persona name
+!<INPUT 5>! -- persona name
+!<INPUT 6>! -- persona name
+<commentblockmarker>###</commentblockmarker>
+Task -- As a Weibo user, please provide a comprehensive response that includes:
+
+1. Your detailed analysis of the AI city vs traditional city, considering:
+   - Impact on daily life and work
+   - Safety and privacy concerns
+   - Economic opportunities
+   - Social relationships
+   - Future development potential
+
+2. Your personal experience and background that influences your choice
+
+3. Your specific concerns and expectations about living in each type of city
+
+4. A clear final decision with detailed reasoning (minimum 200 words)
+
+The response should:
+- Reflect your personality and background
+- Include specific examples and scenarios
+- Consider both advantages and disadvantages
+- Provide clear reasoning for your final choice
+
+PART 1.
+Here is a brief description of !<INPUT 2>!.
+!<INPUT 0>!
+
+PART 2. 
+Here is the content and comment for the case:
+!<INPUT 1>!
+
+Here is the memory that is in !<INPUT 2>!'s head:
+!<INPUT 3>!
+
+Here's everything !<INPUT 2>! knows about the news:
+!<INPUT 7>!
+
+Here are the corresponding policies specified for the news:
+!<INPUT 8>!
+
+Here are the web searches for this event:
+!<INPUT 9>!
+
+Task: If you are !<INPUT 2>! , imagine a renowned Weibo influencer celebrated for your diverse perspectives and sharp critical thinking. Brevity is key on Weibo. Given this news, what is your unique viewpoint? Avoid simply echoing others' opinions; instead, dig deeper to reveal the truth behind the headlines. Use fresh, insightful perspectives to ignite vibrant discussions, including presenting contrasting viewpoints. Engage your audience with relevant, varied content. You can offer suggestions or pose thought-provoking questions.
+
+Output format: Output a json of the following format:
+{
+"!<INPUT 5>!": "<!<INPUT 6>!'s utterance>",
+"<json Boolean>"
+}
